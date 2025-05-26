@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+
+import Home from './pages/Home.js';
+import Menu from './pages/Cristian1/Menu.js';
+import ModoEntrega from './pages/Cristian2/ModoEntrega.js';
+
+import Reservas from './pages/Sotelo1/Reservas.js';
+import Login from './pages/Sotelo2/Login.js';
+
+import Noticias from './pages/Kevyn1/Noticias.js';
+import Ubicacion from './pages/Kevyn2/Ubicacion.js';
+
+
+
+import './index.css';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-wrapper">
+        <NavBar />
+
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="/Menu" element={ <Menu /> } />
+            <Route path="/ModoEntrega" element={ <ModoEntrega /> } />
+            <Route path="/Reservas" element={ <Reservas /> } />
+            <Route path="/Login" element={ <Login /> } />
+            <Route path="/Noticias" element={ <Noticias /> } />
+            <Route path="/Ubicacion" element={ <Ubicacion /> } />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
