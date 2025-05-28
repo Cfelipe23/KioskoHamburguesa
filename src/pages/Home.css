@@ -1,5 +1,6 @@
 .search-section {
   background: linear-gradient(135deg, #FFD700, #FFA500);
+  min-height: 69vh;
   text-align: center;
   padding: 60px 20px;
   color: #fff;
