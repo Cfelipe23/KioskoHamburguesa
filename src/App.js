@@ -8,11 +8,14 @@ import Home from './pages/Home.js';
 import Menu from './pages/Cristian1/Menu.js';
 import ModoEntrega from './pages/Cristian2/ModoEntrega.js';
 
-import Reservas from './pages/Sotelo1/Reservas.js';
-import Login from './pages/Sotelo2/Login.js';
+import Reservas from './pages/Sotelo1/reservas.jsx';
+import Login from './pages/Sotelo2/login.jsx';
+import Registrarse from './pages/Sotelo2/registrarse.jsx';
+
 
 import Noticias from './pages/Kevyn1/Noticias.js';
 import Ubicacion from './pages/Kevyn2/Ubicacion.js';
+import RutaPrivada from './pages/Sotelo2/RutaPrivada.js';
 
 
 
@@ -25,15 +28,19 @@ const App = () => {
         <NavBar />
 
         <main className="main-content">
-          <Routes>
-            <Route path="/" element={ <Home /> } />
-            <Route path="/Menu" element={ <Menu /> } />
-            <Route path="/ModoEntrega" element={ <ModoEntrega /> } />
-            <Route path="/Reservas" element={ <Reservas /> } />
-            <Route path="/Login" element={ <Login /> } />
-            <Route path="/Noticias" element={ <Noticias /> } />
-            <Route path="/Ubicacion" element={ <Ubicacion /> } />
-          </Routes>
+        <Routes>
+          {/* Rutas públicas */}
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registrarse" element={<Registrarse />} />
+
+          {/* Rutas protegidas */}
+          <Route path="/Menu" element={<RutaPrivada><Menu /></RutaPrivada>} />
+          <Route path="/ModoEntrega" element={<RutaPrivada><ModoEntrega /></RutaPrivada>} />
+          <Route path="/reservas" element={<RutaPrivada><Reservas /></RutaPrivada>} />
+          <Route path="/Noticias" element={<RutaPrivada><Noticias /></RutaPrivada>} />
+          <Route path="/Ubicacion" element={<RutaPrivada><Ubicacion /></RutaPrivada>} />
+        </Routes>
         </main>
         <Footer />
       </div>
