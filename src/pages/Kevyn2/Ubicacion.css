@@ -1,0 +1,121 @@
+.ubicacion-container {
+  background: linear-gradient(135deg, #f5e069, #FFA500);
+  min-height: 58vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor-principal {
+  display: flex;
+  width: 900px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 30px;
+  gap: 30px;
+  position: relative;
+}
+
+/* Solo línea roja vertical central */
+.linea-roja {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: red;
+  border-radius: 2px;
+  z-index: 10;
+}
+
+.lado {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 20; /* Por encima de la línea */
+}
+
+.lado.izquierdo {
+  padding-right: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.lado.derecho {
+  padding-left: 40px;
+}
+
+.titulo-lado {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #b33a00;
+}
+
+.icono-rojo {
+  color: red;
+  margin-right: 12px;
+}
+
+.imagen-ubicacion {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  border: 2px solid #ffa500;
+  box-shadow: 0 4px 8px rgba(255,165,0,0.4);
+  margin-bottom: 15px;
+}
+
+.direccion {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5a3e00;
+}
+
+.lista-horarios {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5a3e00;
+}
+
+/* Responsive para pantallas chicas */
+@media (max-width: 720px) {
+  .contenedor-principal {
+    flex-direction: column;
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .linea-roja {
+    display: none; /* oculta línea en móvil */
+  }
+
+  .lado {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lado.izquierdo,
+  .lado.derecho {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .imagen-ubicacion {
+    max-width: 90vw;
+  }
+}

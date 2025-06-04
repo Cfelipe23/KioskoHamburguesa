@@ -14,6 +14,8 @@ import Reservas from './pages/Sotelo1/Reservas.js';
 import Login from './pages/Sotelo2/Login.js';
 
 import Noticias from './pages/Kevyn1/Noticias.js';
+import Ofertas from './pages/Kevyn1/Ofertas.js';
+import Eventos from './pages/Kevyn1/Eventos.js';
 import Ubicacion from './pages/Kevyn2/Ubicacion.js';
 
 
@@ -33,6 +35,8 @@ const App = () => {
             <Route path="/Reservas" element={ <Reservas /> } />
             <Route path="/Login" element={ <Login /> } />
             <Route path="/Noticias" element={ <Noticias /> } />
+            <Route path="/Eventos" element={ <Eventos /> } />
+            <Route path="/Ofertas" element={ <Ofertas /> } />
             <Route path="/Ubicacion" element={ <Ubicacion /> } />
           </Routes>
         </main>
