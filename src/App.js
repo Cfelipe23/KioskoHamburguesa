@@ -1,14 +1,15 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'leaflet/dist/leaflet.css';
+
+
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
-import Home from './pages/Home';
-import Menu from './pages/Cristian1/Menu';
-import ModoEntrega from './pages/Cristian2/ModoEntrega';
+import Home from './pages/Home.js';
+import Menu from './pages/Cristian1/Menu.js';
+import ModoEntrega from './pages/Cristian2/ModoEntrega.js';
 
 import Reservas from './pages/Sotelo1/Reservas';
 import Login from './pages/Sotelo2/Login';
@@ -42,7 +43,10 @@ const App = () => {
         </main>
         <Footer />
       </div>
+
+
     </Router>
+
   );
 };
 
