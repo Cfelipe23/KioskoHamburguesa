@@ -26,11 +26,11 @@ const Ubicacion = () => {
 
           {}
           <div className="mapa-ubicacion">
-            <MapContainer center={[2.444814, -76.614739]} zoom={17} style={{ height: "300px", width: "100%" }}>
+            <MapContainer center={[2.445841, -76.621197]} zoom={17} style={{ height: "300px", width: "100%" }}>
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
-              <Marker position={[2.444814, -76.614739]}>
+              <Marker position={[2.445841, -76.621197]}>
                 <Popup>
                   Estamos aquí: Cra. 23 #6a-38, Popayán.
                 </Popup>
