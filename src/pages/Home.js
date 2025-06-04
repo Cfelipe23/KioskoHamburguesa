@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import { FaMotorcycle, FaStore, FaSearch, FaMapMarkerAlt } from 'react-icons/fa';
 
+
 const Home = () => {
   return (
     <section className="search-section">

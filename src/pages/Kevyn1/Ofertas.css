@@ -1,0 +1,49 @@
+.ofertas-container {
+  padding: 13px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5e069, #FFA500);
+}
+
+.ofertas-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.oferta-item {
+  max-width: 250px;
+  text-align: center;
+}
+
+.oferta-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.oferta-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.oferta-btn:hover {
+  background-color: #0056b3;
+}
+
+.oferta-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.oferta-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
