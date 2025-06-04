@@ -1,0 +1,28 @@
+.detalle-container {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.detalle-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.detalle-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.detalle-info h1 {
+  margin-bottom: 20px;
+}
+
+.detalle-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

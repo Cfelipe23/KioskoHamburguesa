@@ -1,11 +1,12 @@
 import React from 'react';
+// Importa los íconos correctamente:
 import { Tag, Calendar } from 'lucide-react';
-import './Noticias.css';
 import { Link } from 'react-router-dom';
+import './Noticias.css';
 
 const Noticia = () => {
   return (
-<div className="noticia-container">
+    <div className="noticia-container">
       <h1 className="noticia-title">NOTICIAS</h1>
       <p className="noticia-subtitle">¡Descubre nuestros diferentes ofertas y eventos!</p>
 
@@ -23,7 +24,4 @@ const Noticia = () => {
     </div>
   );
 };
-
-
-
 export default Noticia;
