@@ -67,14 +67,14 @@ const Menu = () => {
 
   // Simular precios aleatorios como número decimal
   const getPrice = () => {
-    return 1;
+    return ( Math.random() * ( 19.99 - 5.99 ) + 5.99 ).toFixed( 2 );
   };
 
 
   return (
     <div className="menu-container">
 
-      <div className="category-carousel">
+      <div className="category-carousel-menu">
         <button
           className={ selectedCategory === 'Todos' ? 'active' : '' }
           onClick={ () => handleCategoryClick( 'Todos' ) }
