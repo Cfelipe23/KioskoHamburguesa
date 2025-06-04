@@ -10,6 +10,18 @@
   align-items: center;
 }
 
+.mapa-ubicacion {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(255,165,0,0.4);
+  border: 2px solid #ffa500;
+}
+
+
 
 .contenedor-principal {
   display: flex;
